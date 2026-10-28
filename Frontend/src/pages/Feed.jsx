@@ -10,7 +10,7 @@ const Feed = () => {
     }]);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/posts')
+        axios.get('https://insta-backend-ujel.onrender.com/posts')
         .then((res)=>{
             setPosts(res.data.posts);
         })
